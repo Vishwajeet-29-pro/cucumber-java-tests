@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="041f7c7c-4a44-453b-a23d-68f30622d4f0" name="Changes" comment="test: Create object of Calculator class and assign it in Given.">
+    <list default="true" id="041f7c7c-4a44-453b-a23d-68f30622d4f0" name="Changes" comment="test: Add multiple scenarios.&#10; - add scenarios for multiplication, division and exception (divide by zero).&#10; - Implement step definition for multiplication.&#10; - Create method for multiplication.">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/cucumbertests/calculator/CalculatorStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/cucumbertests/calculator/CalculatorStepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Cucumber Java.Scenario: Adding two numbers.executor": "Run",
+    "Cucumber Java.Scenario: Multiply two numbers.executor": "Run",
+    "Cucumber Java.Scenario: Subtracting two numbers.executor": "Run",
+    "Gradle.Build Cucumber-Java-Test.executor": "Run",
     "Gradle.RunCucumberTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -71,7 +75,67 @@
       <recent name="com.example.cucumbertests" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Multiply two numbers">
+    <configuration name="Scenario: Adding two numbers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/calculator.feature" />
+      <option name="GLUE" value="com.example.cucumbertests.calculator" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Cucumber-Java-Test.test" />
+      <option name="NAME_FILTER" value="^Adding two numbers$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Adding two numbers$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Adding two numbers" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Multiply two numbers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/calculator.feature" />
+      <option name="GLUE" value="com.example.cucumbertests.calculator" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Cucumber-Java-Test.test" />
+      <option name="NAME_FILTER" value="^Multiply two numbers$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Multiply two numbers$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Multiply two numbers" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Subtracting two numbers" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/calculator.feature" />
+      <option name="GLUE" value="com.example.cucumbertests.calculator" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Cucumber-Java-Test.test" />
+      <option name="NAME_FILTER" value="^Subtracting two numbers$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Subtracting two numbers$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Subtracting two numbers" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunCucumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -98,6 +162,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Multiply two numbers" />
+        <item itemvalue="Cucumber Java.Scenario: Subtracting two numbers" />
+        <item itemvalue="Cucumber Java.Scenario: Adding two numbers" />
         <item itemvalue="Gradle.RunCucumberTest" />
       </list>
     </recent_temporary>
@@ -167,7 +234,63 @@
       <option name="project" value="LOCAL" />
       <updated>1723988057663</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test: Add step definition for When.">
+      <option name="closed" value="true" />
+      <created>1723988293710</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988293710</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: Create method for addition.">
+      <option name="closed" value="true" />
+      <created>1723988309148</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988309148</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test: Add step definitions for Then and make scenario pass.">
+      <option name="closed" value="true" />
+      <created>1723988454952</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988454952</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test: Add Scenario for subtraction.">
+      <option name="closed" value="true" />
+      <created>1723988497891</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988497891</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test: Add step definition for subtract.">
+      <option name="closed" value="true" />
+      <created>1723988608593</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988608593</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: Add method for subtraction.">
+      <option name="closed" value="true" />
+      <created>1723988636457</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988636457</updated>
+    </task>
+    <task id="LOCAL-00014" summary="test: Add multiple scenarios.&#10; - add scenarios for multiplication, division and exception (divide by zero).&#10; - Implement step definition for multiplication.&#10; - Create method for multiplication.">
+      <option name="closed" value="true" />
+      <created>1723988867538</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723988867538</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -178,6 +301,13 @@
     <MESSAGE value="test: Create step definition class and implement Given." />
     <MESSAGE value="feat: Add Calculator class." />
     <MESSAGE value="test: Create object of Calculator class and assign it in Given." />
-    <option name="LAST_COMMIT_MESSAGE" value="test: Create object of Calculator class and assign it in Given." />
+    <MESSAGE value="test: Add step definition for When." />
+    <MESSAGE value="feat: Create method for addition." />
+    <MESSAGE value="test: Add step definitions for Then and make scenario pass." />
+    <MESSAGE value="test: Add Scenario for subtraction." />
+    <MESSAGE value="test: Add step definition for subtract." />
+    <MESSAGE value="feat: Add method for subtraction." />
+    <MESSAGE value="test: Add multiple scenarios.&#10; - add scenarios for multiplication, division and exception (divide by zero).&#10; - Implement step definition for multiplication.&#10; - Create method for multiplication." />
+    <option name="LAST_COMMIT_MESSAGE" value="test: Add multiple scenarios.&#10; - add scenarios for multiplication, division and exception (divide by zero).&#10; - Implement step definition for multiplication.&#10; - Create method for multiplication." />
   </component>
 </project>

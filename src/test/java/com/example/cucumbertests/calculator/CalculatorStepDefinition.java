@@ -5,9 +5,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculatorStepDefinition {
     private Calculator calculator;
+    private Exception exception;
     private int result;
 
     @Given("I have a calculator")
@@ -30,8 +32,24 @@ public class CalculatorStepDefinition {
         result = calculator.multiply(num1, num2);
     }
 
+    @When("I divide {int} by {int}")
+    public void iDivideBy(int num1, int num2) {
+        try {
+            result = calculator.divide(num1, num2);
+        } catch (Exception e) {
+            exception = e;
+        }
+    }
+
     @Then("the result should be {int}")
     public void theResultShouldBe(int expectedResult) {
         assertEquals(expectedResult, result);
+    }
+
+    @Then("an ArithmeticException should be thrown")
+    public void anArithmeticExceptionShouldBeThrown() {
+        assertThrows(ArithmeticException.class, () -> {
+            if (exception != null) throw exception;
+        });
     }
 }
