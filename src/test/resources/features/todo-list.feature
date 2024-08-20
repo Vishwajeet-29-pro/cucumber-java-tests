@@ -8,4 +8,4 @@ Feature: To-DO List Management
       | Finish homework | Medium   |
       | Clean the house | Low      |
     Then the to-do list should contain 3 tasks
-    And the hightest priority task should be "Buy groceries
+    And the highest priority task should be "Buy groceries"

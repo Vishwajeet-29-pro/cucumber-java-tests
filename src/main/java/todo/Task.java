@@ -8,4 +8,12 @@ public class Task {
         this.name = name;
         this.priority = priority;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPriority() {
+        return priority;
+    }
 }
